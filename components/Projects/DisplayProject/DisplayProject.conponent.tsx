@@ -4,14 +4,14 @@ import Link from "next/link";
 
 interface Props {
   projectNameUrl: string;
-  url: string;
+
   title: string;
 }
 
-export const DisplayProject: FC<Props> = ({ projectNameUrl, url, title }) => {
+export const DisplayProject: FC<Props> = ({ projectNameUrl, title }) => {
   return (
     <Link style={{ color: "white" }} href={`project/${projectNameUrl}`}>
-      <Container url={url}>
+      <Container>
         <Title>{title}</Title>
       </Container>
     </Link>

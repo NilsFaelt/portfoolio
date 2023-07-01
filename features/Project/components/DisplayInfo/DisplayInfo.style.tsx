@@ -5,10 +5,10 @@ export const Container = styled.div`
   flex-direction: row;
   width: clamp(20rem, 80vw, 35rem);
   height: auto;
-  border: solid white 0.05rem;
-  background-color: white;
+  border: solid black 0.05rem;
+  background-color: black;
   @media (max-width: 400px) {
-    width: 95vw;
+    width: 90vw;
   }
 `;
 export const InnerLeftContainer = styled.div`
@@ -16,7 +16,7 @@ export const InnerLeftContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-  border-right: solid black 0.05rem;
+  border-right: solid white 0.05rem;
 `;
 export const InnerRightContainer = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const InnerRightUpperContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0.5rem;
-  border-bottom: solid black 0.05rem;
+  border-bottom: solid white 0.05rem;
 `;
 export const InnerRightLowerContainer = styled.div`
   display: flex;
@@ -37,17 +37,17 @@ export const InnerRightLowerContainer = styled.div`
 `;
 
 export const Title = styled.h3`
-  color: black;
+  color: white;
   font-size: calc(0.7rem + 0.5vw);
   margin-left: 1rem;
 `;
 export const Text = styled.p`
-  color: black;
+  color: white;
   font-size: calc(0.7rem + 0.3vw);
   margin-left: 1rem;
 `;
 export const UrlLink = styled.a`
-  color: black;
+  color: white;
   font-size: calc(0.7rem + 0.3vw);
   margin-left: 0.5rem;
 `;

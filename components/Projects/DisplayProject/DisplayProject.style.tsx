@@ -1,10 +1,6 @@
 import { styled } from "styled-components";
 
-interface ContainerProps {
-  url: string;
-}
-
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.div`
   position: relative;
 
   width: 100%;

@@ -20,4 +20,11 @@ export const projectData = [
       "This is just a playaround with css, found a website that i made a exact replica off, the website is updated now, but they still have the same feel.",
     stack: "TypeScript, React, Css-modules",
   },
+  {
+    title: "WEBSHOP",
+    href: "",
+    description: "Upcoming webshop",
+    stack:
+      "TypeScript, nextJS, Styled-components, Klarna, Stripe, Contetentful(cms), Nest(node backend), mongoDb, Prisma, Redux, Tanstack",
+  },
 ];

@@ -7,4 +7,5 @@ export const Container = styled.div`
   justify-content: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  background-color: black;
 `;

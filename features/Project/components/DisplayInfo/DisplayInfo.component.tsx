@@ -25,9 +25,13 @@ export const DisplayInfo: FC<Props> = ({ title }) => {
         <Title>{title}</Title>
         <Text>
           URL:{" "}
-          <UrlLink target='blank' href={href}>
-            CLICK ME
-          </UrlLink>
+          {href ? (
+            <UrlLink target='blank' href={href}>
+              CLICK ME
+            </UrlLink>
+          ) : (
+            "NOT YET"
+          )}
         </Text>
       </InnerLeftContainer>
       <InnerRightContainer>

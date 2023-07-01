@@ -19,7 +19,7 @@ export const InfoTextWrapper = styled.div`
 export const Text = styled.div`
   width: clamp(15rem, 30rem, 70vw);
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   border-left: solid white 0.05rem;
   border-bottom: solid white 0.05rem;
   @media (max-width: 400px) {

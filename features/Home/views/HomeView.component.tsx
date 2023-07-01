@@ -2,26 +2,21 @@ import { DisplayProject } from "@/components/Projects";
 import MainLayout from "@/layout/MainLayout";
 import React, { FC } from "react";
 import { Container } from "./HomeView.style";
+import { projectData } from "@/data";
 
 export const HomeView: FC = () => {
   return (
     <MainLayout>
       <Container>
-        <DisplayProject
-          projectNameUrl={"fango-solutions"}
-          title='FANGO SOLUTIONS'
-          url='/projects/fango.png'
-        />
-        <DisplayProject
-          projectNameUrl={"laundry-app"}
-          title='LAUNDRY APP'
-          url='/projects/laundry.png'
-        />
-        <DisplayProject
-          projectNameUrl={"skeidar"}
-          title='SKEIDAR'
-          url='/projects/skeidar.png'
-        />
+        {projectData.map((each) => {
+          return (
+            <DisplayProject
+              key={each.title}
+              projectNameUrl={each.title}
+              title={each.title}
+            />
+          );
+        })}
       </Container>
     </MainLayout>
   );
