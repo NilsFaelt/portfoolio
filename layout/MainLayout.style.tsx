@@ -9,7 +9,7 @@ export const Header = styled.header`
   top: 0;
   width: 100%;
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(1, 1, 1, 0.7);
   z-index: 1;
 `;
 export const LocationTitle = styled.h3`

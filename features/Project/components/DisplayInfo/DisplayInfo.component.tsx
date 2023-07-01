@@ -24,10 +24,9 @@ export const DisplayInfo: FC<Props> = ({ title }) => {
       <InnerLeftContainer>
         <Title>{title}</Title>
         <Text>
-          URL:{" "}
           {href ? (
             <UrlLink target='blank' href={href}>
-              CLICK ME
+              VISIT WEBSITE
             </UrlLink>
           ) : (
             "NOT YET"
@@ -36,11 +35,11 @@ export const DisplayInfo: FC<Props> = ({ title }) => {
       </InnerLeftContainer>
       <InnerRightContainer>
         <InnerRightUpperContainer>
-          <Text>{description}</Text>{" "}
+          <Text>{description.toUpperCase()}</Text>{" "}
         </InnerRightUpperContainer>
         <InnerRightLowerContainer>
           {" "}
-          <Text>{stack}</Text>{" "}
+          <Text>{stack.toUpperCase()}</Text>{" "}
         </InnerRightLowerContainer>
       </InnerRightContainer>
     </Container>

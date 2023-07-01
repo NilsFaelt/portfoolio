@@ -24,8 +24,7 @@ export const Container = styled.div`
   height: 10rem;
   padding-left: 3rem;
   transform: translate(-50%, -50%);
-  /* border-left: 0.05rem solid white;
-  border-bottom: 0.05rem solid white; */
+
   display: flex;
   flex-direction: row;
   gap: 1rem;

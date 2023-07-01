@@ -12,7 +12,7 @@ export const HomeView: FC = () => {
           return (
             <DisplayProject
               key={each.title}
-              projectNameUrl={each.title}
+              projectNameUrl={each.title.toLocaleLowerCase()}
               title={each.title}
             />
           );

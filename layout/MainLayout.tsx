@@ -12,11 +12,7 @@ const MainLayout: FC<Props> = ({ children }) => {
   const router = useRouter();
   const pageLocation = router.pathname;
   const lastPartOfUrl = pageLocation.split("/").pop();
-  const projectName = router.query.name;
-  const displayedLocationTitle =
-    typeof projectName === "string"
-      ? projectName.toUpperCase()
-      : lastPartOfUrl?.toUpperCase();
+  const titleAndBackLink = lastPartOfUrl === "home" ? "NILS FÄLT" : "BACK";
   const [firstToogle, setFirstToogle] = useState(false);
   const [toogleMenu, setToogleMenu] = useState(false);
   const [toogleBurger, setToogleburger] = useState(false);
@@ -24,8 +20,9 @@ const MainLayout: FC<Props> = ({ children }) => {
     <Container>
       <Header>
         <Link style={{ color: "white" }} href={"/home"}>
-          <LocationTitle>{displayedLocationTitle}</LocationTitle>
+          <LocationTitle>{titleAndBackLink}</LocationTitle>
         </Link>
+
         <BurgerMenu
           setFirstToogle={setFirstToogle}
           toogleDropDownMenu={toogleMenu}

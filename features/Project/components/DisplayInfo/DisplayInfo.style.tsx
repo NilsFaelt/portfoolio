@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { keyframes, styled } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -17,6 +17,8 @@ export const InnerLeftContainer = styled.div`
   justify-content: space-between;
   width: 40%;
   border-right: solid white 0.05rem;
+  border-bottom: solid white 0.05rem;
+  padding-bottom: 1rem;
 `;
 export const InnerRightContainer = styled.div`
   display: flex;
@@ -40,6 +42,7 @@ export const Title = styled.h3`
   color: white;
   font-size: calc(0.7rem + 0.5vw);
   margin-left: 1rem;
+  padding-top: 1rem;
 `;
 export const Text = styled.p`
   color: white;
@@ -49,5 +52,14 @@ export const Text = styled.p`
 export const UrlLink = styled.a`
   color: white;
   font-size: calc(0.7rem + 0.3vw);
-  margin-left: 0.5rem;
+  margin-left: -0.5rem;
+  margin-bottom: rem;
+  border: solid 0.05rem white;
+  padding: 1rem;
+  text-decoration: none;
+  &: hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
 `;
