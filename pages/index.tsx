@@ -12,6 +12,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <main
+        style={{ cursor: "pointer" }}
         onClick={() => {
           router.push("/home");
         }}

@@ -22,6 +22,9 @@ export const Text = styled.div`
   padding: 1rem;
   border-left: solid white 0.05rem;
   border-bottom: solid white 0.05rem;
+  @media (max-width: 400px) {
+    width: 80%;
+  }
 `;
 export const Span = styled.span`
   color: white;

@@ -8,7 +8,7 @@ export const About: FC = () => {
       <InfoTextWrapper></InfoTextWrapper>
       <Text>
         {" "}
-        <Span>ABOUTME</Span> <br /> I&apos;M A FRONT-END DEVELOPER WITH A
+        <Span>ABOUT ME</Span> <br /> I&apos;M A FRONT-END DEVELOPER WITH A
         PASSION FOR DESIGN AND A CONSTANT HUNT FOR NEW SOLUTIONS OUTSIDE OF THE
         BOX. <br />
         MY FOUNDATION COMES FROM THE FRONT-END, BUT WITH A CONSTANT HUNGER FOR
