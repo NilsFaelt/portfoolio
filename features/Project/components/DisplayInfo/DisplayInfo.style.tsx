@@ -56,7 +56,6 @@ export const Text = styled.p`
 export const UrlLink = styled.a`
   color: white;
   font-size: calc(0.7rem + 0.3vw);
-
   border: solid 0.05rem white;
   padding: 1rem;
   text-decoration: none;
@@ -66,6 +65,8 @@ export const UrlLink = styled.a`
     transition: 0.5s;
   }
   @media (max-width: 400px) {
+    font-size: calc(0.6rem + 0.3vw);
+    padding: 0.7rem;
     margin-left: -1rem;
   }
 `;
