@@ -1,6 +1,6 @@
 import MainLayout from "@/layout/MainLayout";
 import React, { FC } from "react";
-import { DisplayImages, DisplayInfo } from "../components";
+import { DisplayImages, DisplayInfo, ProjectArrowNav } from "../components";
 import { Container } from "./ProjectDetailView.style";
 import { useRouter } from "next/router";
 
@@ -12,7 +12,8 @@ export const ProjectDetailView: FC = () => {
     <MainLayout>
       <Container>
         <DisplayInfo title={title.toUpperCase()} />
-        <DisplayImages title={title.toLocaleLowerCase()} />
+        <DisplayImages title={title.toLowerCase()} />
+        <ProjectArrowNav title={title.toUpperCase()} />
       </Container>
     </MainLayout>
   );

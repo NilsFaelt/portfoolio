@@ -1,5 +1,6 @@
 export const projectData = [
   {
+    index: 1,
     title: "FANGO-SOLUTIONS",
     href: "https://fangosolutions.com",
     description:
@@ -7,6 +8,7 @@ export const projectData = [
     stack: "TypeScript, nextJS,  styled-components",
   },
   {
+    index: 2,
     title: "LAUNDRY-APP",
     href: "https://laundryapp-front-end.onrender.com/",
     description:
@@ -14,6 +16,7 @@ export const projectData = [
     stack: "TypeScript, React, Express, mongoDB, styled-components",
   },
   {
+    index: 3,
     title: "SKEIDAR",
     href: "https://tubular-monstera-9d7aeb.netlify.app/",
     description:
@@ -21,6 +24,7 @@ export const projectData = [
     stack: "TypeScript, React, Css-modules",
   },
   {
+    index: 4,
     title: "WEBSHOP",
     href: "",
     description: "Upcoming webshop",
