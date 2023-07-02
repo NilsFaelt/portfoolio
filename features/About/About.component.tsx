@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { Container, InfoTextWrapper, Span, Text } from "./About.style";
-import { InfoContainer } from "./components";
 
 export const About: FC = () => {
   return (

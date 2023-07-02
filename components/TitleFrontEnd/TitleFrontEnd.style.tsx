@@ -20,14 +20,16 @@ const hrAnimation = keyframes`
 export const Container = styled.div`
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 43%;
   height: 10rem;
   padding-left: 3rem;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  @media screen and (max-width: 500px) {
+    top: 45%;
+  }
 `;
 
 export const TextName = styled.p`
@@ -38,6 +40,9 @@ export const TextName = styled.p`
   border-left: solid white 0.09rem;
   border-bottom: solid white 0.05rem;
   padding: 0.3rem;
+  @media screen and (max-width: 500px) {
+    top: 5rem;
+  }
 `;
 export const TextFront = styled.h2`
   font-size: calc(1rem + 2vw);
@@ -53,20 +58,17 @@ export const HrOne = styled.hr`
   background-color: red;
   animation: ${hrAnimation} 3s forwards;
   @media screen and (max-width: 500px) {
-    opacity: 0;
   }
 `;
 export const HrTwo = styled.hr`
   height: calc(3rem + 4vw);
   background-color: yellow;
   @media screen and (max-width: 500px) {
-    opacity: 0;
   }
 `;
 export const HrThree = styled.hr`
   height: calc(2rem + 4vw);
   background-color: blue;
   @media screen and (max-width: 500px) {
-    opacity: 0;
   }
 `;

@@ -1,6 +1,6 @@
 import { TitleFrontEnd } from "@/components";
-import Head from "next/head";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Home() {
   const router = useRouter();
