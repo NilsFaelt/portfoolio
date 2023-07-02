@@ -26,7 +26,7 @@ export const DisplayInfo: FC<Props> = ({ title }) => {
         <Text>
           {href ? (
             <UrlLink target='blank' href={href}>
-              VISIT WEBSITE
+              WEBSITE
             </UrlLink>
           ) : (
             "NOT YET"
